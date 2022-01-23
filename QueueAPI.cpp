@@ -40,7 +40,4 @@ std::string KoaxyClass::PushStringToPriorityQueue(std::string str)
 	return str;
 }
 
-void KoaxyClass::ClearStringQueue()
-{
-	this->StrPriorityQueue.pop();
-}
+
