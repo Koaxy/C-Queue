@@ -18,7 +18,7 @@ public:
 	int pushIntToQueuePriority(int Value);
 	std::string PushStringToQueue(std::string str);
 	std::string PushStringToPriorityQueue(std::string str);
-	void ClearStringQueue();
+	
 private:
 	std::queue<std::string> StrQueue;
 	std::priority_queue<std::string> StrPriorityQueue;
