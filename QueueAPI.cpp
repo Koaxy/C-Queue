@@ -41,3 +41,33 @@ std::string KoaxyClass::PushStringToPriorityQueue(std::string str)
 }
 
 
+bool KoaxyClass::PushBoolToQueue(bool Bo)
+{
+	this->boolQueue.push(Bo);
+	Bo = this->boolQueue.front();
+	if (this->boolQueue.size() == 1)
+	{
+		this->boolQueue.pop(); // Returns the result also clears the queue
+	}
+
+	return false;
+}
+
+bool KoaxyClass::PriorityBoolQueue_Impl(bool Bo)
+{
+	this->PriorityBoolQueue.push(Bo);
+
+	printf("Queue Size is: %i\n", this->PriorityBoolQueue.size());
+
+	if (this->PriorityBoolQueue.size() == 1)
+	{
+		this->PriorityBoolQueue.pop(); // Returns the boolean.
+		printf("Popped it! \n");
+	}
+	printf("Boolean: %i\n", Bo);
+	return Bo;
+	//this->boolQueue.push(Bo); // Pushes a bool aka TRUE or FALSE or true or false
+
+}
+
+
