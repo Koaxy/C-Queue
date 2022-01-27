@@ -70,4 +70,11 @@ bool KoaxyClass::PriorityBoolQueue_Impl(bool Bo)
 
 }
 
-
+void KoaxyClass::ClearAllQueues()
+{
+	this->StrPriorityQueue.pop();
+	this->boolQueue.pop();
+	this->IntPriorityQueue.pop();
+	this->PriorityBoolQueue.pop();
+	this->StrQueue.pop();
+}
