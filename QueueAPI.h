@@ -20,7 +20,7 @@ public:
 	std::string PushStringToPriorityQueue(std::string str);
 	bool PushBoolToQueue(bool Bo);
 	bool PriorityBoolQueue_Impl(bool Bo);
-	void ClearStringQueue();
+	void ClearAllQueues();
 private:
 	std::queue <bool> boolQueue;
 	std::priority_queue<bool> PriorityBoolQueue; // Added Boolean value queues
