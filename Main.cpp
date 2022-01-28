@@ -4,8 +4,8 @@ KoaxyClass* QueueAPI = NULL;
 
 int main(){
   
-  QueueAPI = new KoaxyClass();
+    QueueAPI = new KoaxyClass();
   
   
-  	Koa->PriorityBoolQueue_Impl(false);
+  	QueueAPI->PriorityBoolQueue_Impl(false);
 }
